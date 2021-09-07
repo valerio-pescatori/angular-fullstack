@@ -1,0 +1,98 @@
+body{
+    font-family: 'Courier New', Courier, Monaco !important;
+    font-style: italic !important;
+    background-color: #191923 !important;
+    background-image: url(media/Logo_small.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 90% -20% !important;
+    background-size: 50% 50% !important;
+    background-attachment: fixed;
+}
+
+h1, h4{
+    color: #FCF7F8;
+    font-weight: 100;
+}
+
+h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#menu-nav{
+    background-color: #CED3DC;
+    border: 1px solid #CED3DC;
+    border-radius: 5px;
+}
+
+
+#brand-name{
+    text-align: center;
+    transform: skewX(-10deg);
+    margin-top: 45%;
+}
+
+
+.red-button{
+    margin-top: 15%;
+    color: #FCF7F8;
+    font-weight: 100;
+    font-size: 20px;
+    background-color: #A31621;
+    align-self: center;
+    border: 1px solid #A31621;
+    border-radius: 5px;
+    transform: skewX(-10deg);
+    padding: 0px 5px 0px 5px;
+    box-shadow: -1px 1px 5px #0E79B2;
+    transition: all .2s ease;
+}
+
+
+.line{
+    background-color: #FCF7F8;
+    height: 1px;
+}
+
+#line{
+    margin-top: 30%;
+}
+
+.circle{
+    width: 0px;
+    height: 0px;
+    background-color: #a55057;
+    border-radius: 50%;
+    transition: all 2s ease;
+    transform: skewX(0deg);
+}
+
+@media screen and (min-width: 576px){
+    body{
+        background-position: 78% 2% !important;
+        background-size: 30% 30% !important;
+    }
+
+    #menu-nav{
+        width: auto;
+    }
+
+    #brand-name{
+        margin-top: 10%;
+    }
+
+    #line{
+        margin-top: 15%;
+    }
+
+    .red-button{
+        margin-top: auto;
+    }
+}
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
