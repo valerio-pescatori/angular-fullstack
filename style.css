@@ -2,11 +2,13 @@ body{
     font-family: 'Courier New', Courier, Monaco !important;
     font-style: italic !important;
     background-color: #191923 !important;
-    background-image: url(media/Logo_small.svg) !important;
-    background-repeat: no-repeat !important;
-    background-position: 90% -20% !important;
-    background-size: 50% 50% !important;
-    background-attachment: fixed;
+}
+
+#logo-bg{
+    width: 50%;
+    height: 50%;
+    margin-left: 35%;
+    transform: skewX(-10deg);
 }
 
 h1, h4{
@@ -28,7 +30,6 @@ h4{
 
 #brand-name{
     text-align: center;
-    transform: skewX(-10deg);
     margin-top: 45%;
 }
 
@@ -48,7 +49,6 @@ h4{
     transition: all .2s ease;
 }
 
-
 .line{
     background-color: #FCF7F8;
     height: 1px;
@@ -59,13 +59,38 @@ h4{
 }
 
 .circle{
-    width: 0px;
-    height: 0px;
+    position: absolute;
     background-color: #a55057;
     border-radius: 50%;
-    transition: all 2s ease;
-    transform: skewX(0deg);
+    z-index: -1;
+    left: 50%;
+    animation: animate-circle 1s infinite;
 }
+
+
+@keyframes animate-circle {
+    0%{
+        width: 0px;
+        height: 0px;
+        transform: translateX(0px);
+        opacity: 0%;
+    }
+
+    50%{
+        width: 200px;
+        height: 200px;
+        transform: translateX(-100px);
+        opacity: 30%;
+    }
+
+    100%{
+        width: 0px;
+        height: 0px;
+        transform: translateX(0px);
+        opacity: 0%;
+    }
+}
+
 
 @media screen and (min-width: 576px){
     body{
@@ -87,6 +112,11 @@ h4{
 
     .red-button{
         margin-top: auto;
+    }
+
+    #logo-bg{
+        width: 30%;
+        height: 30%;
     }
 }
 
