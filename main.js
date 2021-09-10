@@ -10,6 +10,8 @@ var fontSize = parseInt(window.getComputedStyle(btn, null).getPropertyValue("fon
 btn.onclick = (e) => {
     e.preventDefault();
     
+    circle.classList.toggle("animate-circle");
+
     // disabilito la transizione
     let transition = btn.style.transition;
     btn.style.transition = "";
@@ -36,6 +38,10 @@ btn.onclick = (e) => {
         btn.style.height = h + "px";
         btn.style.fontSize = fontSize + "px";
     }, 200);
+
+    setTimeout(() => {
+        circle.classList.toggle("animate-circle");
+    }, 1000);
 
 
 };
