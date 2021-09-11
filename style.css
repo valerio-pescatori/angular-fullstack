@@ -33,6 +33,14 @@ h4{
     margin-top: 45%;
 }
 
+.line{
+    background-color: #FCF7F8;
+    height: 1px;
+}
+
+#line{
+    margin-top: 30%;
+}
 
 .red-button{
     margin-top: 15%;
@@ -46,26 +54,33 @@ h4{
     transform: skewX(-10deg);
     padding: 0px 5px 0px 5px;
     box-shadow: -1px 1px 5px #0E79B2;
-    transition: all .2s ease;
     overflow: hidden; /* per il cerchio */
 }
 
-.line{
-    background-color: #FCF7F8;
-    height: 1px;
+.animate-btn{
+    animation: button-animation 0.5s;
 }
 
-#line{
-    margin-top: 30%;
+@keyframes button-animation {
+    0%{
+        transform: scale(1, 1) skewX(-10deg);
+    }
+    70%{
+        transform: scale(0.8, 0.8) skewX(-10deg);
+    }
+    100%{
+        transform: scale(1, 1) skewX(-10deg);
+    }
 }
 
 .circle{
     position: absolute;
-    background-color: #a55057;
+    background-color: #FCF7F8;
     border-radius: 50%;
     z-index: -1;
     left: 50%;
 }
+
 
 .animate-circle{
     animation: animate-circle 1s;
@@ -76,21 +91,21 @@ h4{
     0%{
         width: 0px;
         height: 0px;
-        transform: translate(0px, 0px);
+        transform: translate(0px, 15px);
         opacity: 100%;
     }
 
     90%{
         width: 200px;
         height: 200px;
-        transform: translate(-100px, -70px);
+        transform: translate(-100px, -100px);
         opacity: 0%;
     }
 
     100%{
         width: 0px;
         height: 0px;
-        transform: translate(0px, 0px);
+        transform: translate(0px, 15px);
         opacity: 0%;
     }
 }
