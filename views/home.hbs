@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  {{>sidebar}}
+
+  <header>
+    <!-- title -->
+    <div class="row justify-content-center" id="brand-name">
+      <img src="media/Logo_small.svg" id="logo-bg" alt="brand logo" />
+      <h1 class="col" style="position: absolute; transform: skewX(-10deg);">
+        FastForward Clothing
+      </h1>
+    </div>
+
+    <!-- line -->
+    <div class="row" id="line">
+      <div class="col-1"></div>
+      <div class="col line"></div>
+      <div class="col-1"></div>
+    </div>
+
+  </header>
+
+  <!-- shop now button -->
+  <main style="margin-top: 10%;">
+    <div class="d-flex flex-column justify-content-center">
+      <button
+        type="button"
+        class="d-inline red-button text-nowrap"
+        id="red-button"
+      >
+        <!-- idea animazione: al click il bottone diventa leggermente più piccolo, 
+                        poi mentre torna grande dal centro cresce un anello rosso scuro fino ad uscire dal bottone -->
+        <div class="circle" id="circle">
+        </div>
+        <h5 class="my-1 d-inline">Shop now</h5>
+      </button>
+    </div>
+
+  </main>
+
+  <footer style="margin-top: 10%;">
+  </footer>
+</div>
+<script src="main.js"></script>
