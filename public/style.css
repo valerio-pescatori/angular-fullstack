@@ -1,147 +1,159 @@
-body{
-    font-family: 'Courier New', Courier, Monaco !important;
-    font-style: italic !important;
-    background-color: #191923 !important;
+:root {
+  --raisin-black: #191923;
+  --snow: #fcf7f8;
+  --ruby-red: #a31621;
+  --light-gray: #ced3dc;
+  --command-blue: #0e79b2;
 }
 
-#logo-bg{
-    width: 50%;
-    height: 50%;
-    margin-left: 35%;
-    transform: skewX(-10deg);
+body {
+  font-family: "Courier New", Courier, Monaco !important;
+  font-style: italic !important;
+  background-color: var(--raisin-black) !important;
 }
 
-h1, h4{
-    color: #FCF7F8;
-    font-weight: 100;
+#logo-bg {
+  width: 50%;
+  height: 50%;
+  margin-left: 35%;
+  transform: skewX(-10deg);
 }
 
-h4{
-    margin-top: 10px;
-    margin-bottom: 10px;
+h1,
+h4 {
+  color: var(--snow);
+  font-weight: 100;
 }
 
-#menu-nav{
-    background-color: #CED3DC;
-    border: 1px solid #CED3DC;
-    border-radius: 5px;
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-#brand-name{
-    text-align: center;
-    margin-top: 45%;
+#menu-nav {
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
 }
 
-.line{
-    background-color: #FCF7F8;
-    height: 1px;
+#brand-name {
+  text-align: center;
+  margin-top: 45%;
 }
 
-#line{
-    margin-top: 30%;
+.line {
+  background-color: var(--snow);
+  height: 1px;
 }
 
-.red-button{
-    margin-top: 15%;
-    color: #FCF7F8;
-    font-weight: 100;
-    font-size: 20px;
-    background-color: #A31621;
-    align-self: center;
-    border: 1px solid #A31621;
-    border-radius: 5px;
-    transform: skewX(-10deg);
-    padding: 0px 5px 0px 5px;
-    box-shadow: -1px 1px 5px #0E79B2;
-    overflow: hidden; /* per il cerchio */
+#line {
+  margin-top: 30%;
 }
 
-.animate-btn{
-    animation: button-animation 0.5s;
+.red-button {
+  margin-top: 15%;
+  color: var(--snow);
+  font-weight: 100;
+  font-size: 20px;
+  background-color: var(--ruby-red);
+  align-self: center;
+  border: 1px solid var(--ruby-red);
+  border-radius: 5px;
+  transform: skewX(-10deg);
+  padding: 0px 5px 0px 5px;
+  box-shadow: -1px 1px 5px var(--command-blue);
+  overflow: hidden; /* per il cerchio */
+}
+
+.animate-btn {
+  animation: button-animation 0.5s;
 }
 
 @keyframes button-animation {
-    0%{
-        transform: scale(1, 1) skewX(-10deg);
-    }
-    70%{
-        transform: scale(0.8, 0.8) skewX(-10deg);
-    }
-    100%{
-        transform: scale(1, 1) skewX(-10deg);
-    }
+  0% {
+    transform: scale(1, 1) skewX(-10deg);
+  }
+  70% {
+    transform: scale(0.8, 0.8) skewX(-10deg);
+  }
+  100% {
+    transform: scale(1, 1) skewX(-10deg);
+  }
 }
 
-.circle{
-    position: absolute;
-    background-color: #FCF7F8;
-    border-radius: 50%;
-    z-index: -1;
-    left: 50%;
+.circle {
+  position: absolute;
+  background-color: var(--snow);
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
 }
 
-
-.animate-circle{
-    animation: animate-circle 1s;
+.animate-circle {
+  animation: animate-circle 1s;
 }
-
 
 @keyframes animate-circle {
-    0%{
-        width: 0px;
-        height: 0px;
-        transform: translate(0px, 15px);
-        opacity: 100%;
-    }
+  0% {
+    width: 0px;
+    height: 0px;
+    transform: translate(0px, 15px);
+    opacity: 100%;
+  }
 
-    90%{
-        width: 200px;
-        height: 200px;
-        transform: translate(-100px, -100px);
-        opacity: 0%;
-    }
+  90% {
+    width: 200px;
+    height: 200px;
+    transform: translate(-100px, -100px);
+    opacity: 0%;
+  }
 
-    100%{
-        width: 0px;
-        height: 0px;
-        transform: translate(0px, 15px);
-        opacity: 0%;
-    }
+  100% {
+    width: 0px;
+    height: 0px;
+    transform: translate(0px, 15px);
+    opacity: 0%;
+  }
 }
 
+@media screen and (min-width: 576px) {
+  body {
+    background-position: 78% 2% !important;
+    background-size: 30% 30% !important;
+  }
 
-@media screen and (min-width: 576px){
-    body{
-        background-position: 78% 2% !important;
-        background-size: 30% 30% !important;
-    }
+  #menu-nav {
+    width: auto;
+  }
 
-    #menu-nav{
-        width: auto;
-    }
+  #brand-name {
+    margin-top: 10%;
+  }
 
-    #brand-name{
-        margin-top: 10%;
-    }
+  #line {
+    margin-top: 15%;
+  }
 
-    #line{
-        margin-top: 15%;
-    }
+  .red-button {
+    margin-top: auto;
+  }
 
-    .red-button{
-        margin-top: auto;
-    }
-
-    #logo-bg{
-        width: 30%;
-        height: 30%;
-    }
+  #logo-bg {
+    width: 30%;
+    height: 30%;
+  }
 }
-
 
 /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
