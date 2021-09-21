@@ -74,6 +74,26 @@ h4 {
   -webkit-box-orient: vertical;
 }
 
+.card-title::before {
+  content: "";
+  width: 100%;
+  height: 6%;
+  position: absolute;
+  left: 0;
+  top: 83%;
+  background: linear-gradient(90deg, transparent 80px, #f1f2f2);
+}
+
+/* .divvino {
+  width: 30px;
+  height: 10px;
+  background-color: #a31621;
+  opacity: 20%;
+  position: absolute;
+  top: 84%;
+  left: %;
+} */
+
 .animate-btn {
   animation: button-animation 0.5s;
 }
