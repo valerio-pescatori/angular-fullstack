@@ -67,11 +67,11 @@ h4 {
 
 .card-title {
   font-size: 14px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  /* text-overflow: initial; */
+  /* overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical; */
 }
 
 .card-title::before {
@@ -81,7 +81,7 @@ h4 {
   position: absolute;
   left: 0;
   top: 83%;
-  background: linear-gradient(90deg, transparent 80px, #f1f2f2);
+  background: linear-gradient(90deg, transparent 80px, #ffffff);
 }
 
 /* .divvino {
