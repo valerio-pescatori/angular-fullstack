@@ -65,13 +65,16 @@ h4 {
   overflow: hidden; /* per il cerchio */
 }
 
+.max-lines {
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+}
+
 .card-title {
   font-size: 14px;
-  /* text-overflow: initial; */
-  /* overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical; */
 }
 
 .card-title::before {
@@ -83,16 +86,6 @@ h4 {
   top: 83%;
   background: linear-gradient(90deg, transparent 80px, #ffffff);
 }
-
-/* .divvino {
-  width: 30px;
-  height: 10px;
-  background-color: #a31621;
-  opacity: 20%;
-  position: absolute;
-  top: 84%;
-  left: %;
-} */
 
 .animate-btn {
   animation: button-animation 0.5s;
@@ -170,6 +163,38 @@ h4 {
   #logo-bg {
     width: 30%;
     height: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-title::before {
+    left: -42%;
+    top: 78%;
+    background: linear-gradient(90deg, transparent 80px, #ffffff);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card-title::before {
+    left: -20%;
+    top: 81%;
+    background: linear-gradient(90deg, transparent 80px, #ffffff);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-title::before {
+    left: -20%;
+    top: 84%;
+    background: linear-gradient(90deg, transparent 80px, #ffffff);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card-title::before {
+    left: 0;
+    top: 84%;
+    background: linear-gradient(90deg, transparent 80px, #ffffff);
   }
 }
 
