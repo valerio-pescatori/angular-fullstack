@@ -14,7 +14,7 @@ app.engine(
 );
 app.set("view engine", "hbs");
 
-//rendo la cartella statica
+//rendo statica public
 app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => res.render("home"));
 app.get("/shop", (req, res) => res.render("shop"));
