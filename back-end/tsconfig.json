@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../dist/back-end",
+    "baseUrl": "",
+    "module": "commonjs"
+  }
+}
