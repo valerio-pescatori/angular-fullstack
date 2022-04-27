@@ -1,0 +1,80 @@
+@use "../../mixins.scss" as myMixins;
+@use "sass:map";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+li {
+  padding: 0.4em;
+  margin: auto 0.3em;
+  display: flex;
+}
+
+.logo {
+  width: 10em;
+  height: 2em;
+}
+
+.bottom-row {
+  li:nth-of-type(1) {
+    padding-left: 0;
+  }
+}
+
+.bottom-element {
+  @include myMixins.underline-on-hover;
+  font-size: 14px;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #e4e4e4;
+}
+
+.search-input {
+  font-size: 16px;
+  padding: 0.5em;
+  border: none;
+  background-color: white;
+
+  &::placeholder {
+    color: #a4a5a9;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-icon {
+  margin-right: 0.5em;
+  padding-left: 0.5em;
+  color: black;
+}
+
+.menu-icon {
+  border: 1px solid #e4e4e4;
+  border-right: 0;
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .top-row {
+    li {
+      display: inline;
+      font-weight: 700;
+      &:hover {
+        background-color: #efeff0;
+      }
+    }
+
+    ul:nth-of-type(2) {
+      li {
+        padding: 0.8em;
+        margin: 0 0.3em;
+      }
+    }
+  }
+}
