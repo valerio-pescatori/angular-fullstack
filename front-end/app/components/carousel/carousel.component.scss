@@ -1,0 +1,34 @@
+@use "sass:map";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+.carousel-container {
+  display: flex;
+  height: 400px;
+  background-color: aqua;
+}
+
+.carousel {
+  margin-left: 2em;
+  margin-top: 2em;
+  width: 50%;
+  background-color: red;
+}
+
+.carousel-side {
+  width: 50%;
+  background-color: black;
+  margin: 0 1em;
+  margin-top: 2em;
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .carousel {
+    width: 60%;
+  }
+
+  .carousel-side {
+    width: 40%;
+  }
+}

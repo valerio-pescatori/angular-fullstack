@@ -13,6 +13,11 @@ li {
 .logo {
   width: 10em;
   height: 2em;
+  margin: 1em;
+}
+
+.icon-wrapper {
+  margin: 1em;
 }
 
 .bottom-row {
@@ -31,7 +36,8 @@ li {
   display: flex;
   align-items: center;
   background-color: white;
-  border: 1px solid #e4e4e4;
+  border: 1.5px solid #e4e4e4;
+  height: 3em;
 }
 
 .search-input {
@@ -55,9 +61,14 @@ li {
   color: black;
 }
 
-.menu-icon {
-  border: 1px solid #e4e4e4;
+.menu-icon-wrapper {
+  border: 1.5px solid #e4e4e4;
   border-right: 0;
+  height: 3em;
+}
+
+.menu-icon {
+  height: 1.5em;
 }
 
 @media (min-width: map.get($grid-breakpoints, "lg")) {
