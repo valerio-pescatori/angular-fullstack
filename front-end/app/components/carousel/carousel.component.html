@@ -1,4 +1,86 @@
-<div class="carousel-container">
-  <div class="carousel"></div>
-  <div class="carousel-side"></div>
+<div
+  class="carousel-background"
+  [ngStyle]="{ 'background-color': colors[shown] }"
+  *ngIf="loaded"
+>
+  <div class="carousel-container container-xxl d-flex flex-column flex-md-row">
+    <div
+      class="carousel-wrapper ms-4 mt-4 d-flex align-items-center position-relative"
+    >
+      <button class="left" (click)="onClick(false)" *ngIf="shown != 0">
+        <i class="fat fa-arrow-left fa-2xl"></i>
+      </button>
+      <button
+        class="right"
+        (click)="onClick(true)"
+        *ngIf="shown != images.length - 1"
+      >
+        <i class="fat fa-arrow-right fa-2xl"></i>
+      </button>
+      <button class="play-button" (click)="toggleInterval()">
+        <i
+          class="fas fa-play fa-xs"
+          *ngIf="interval == null; else elseBlock"
+        ></i>
+        <ng-template #elseBlock>
+          <i class="fas fa-pause fa-xs"></i>
+        </ng-template>
+      </button>
+      <div class="image-wrapper d-flex flex-column">
+        <ng-container [ngSwitch]="breakpoint">
+          <img
+            class="carousel-image"
+            [src]="'../../../' + images[shown].pathSm"
+            *ngSwitchCase="
+              breakpoint === 'md' || breakpoint === 'sm' || breakpoint === 'xsm'
+                ? breakpoint
+                : ''
+            "
+          />
+          <img
+            class="carousel-image"
+            [src]="'../../../' + images[shown].path"
+            *ngSwitchCase="
+              breakpoint === 'lg' || breakpoint === 'xl' || breakpoint === 'xxl'
+                ? breakpoint
+                : ''
+            "
+          />
+        </ng-container>
+        <div class="pagination">
+          <ul class="row w-100">
+            <li
+              class="col"
+              [ngClass]="c == shown ? 'active' : ''"
+              *ngFor="let x of images; let c = index"
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-side d-flex flex-column flex-fill">
+      <div class="carousel-icons">
+        <i
+          *ngFor="let icon of images[shown].icons"
+          [ngClass]="icon + ' fa-2xl mx-1'"
+        ></i>
+      </div>
+      <div class="carousel-text-wrapper">
+        <h1 class="carousel-title">
+          {{ images[shown].text.split("\n")[0] }}
+        </h1>
+        <p class="carousel-text">
+          {{ images[shown].text.split("\n")[1] }}
+        </p>
+      </div>
+      <div class="carousel-buttons mt-auto mb-5">
+        <h6>Da dove vuoi iniziare?</h6>
+        <div class="row">
+          <button class="c-button col">Donna</button>
+          <button class="c-button col">Uomo</button>
+          <button class="c-button col">Bambini</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

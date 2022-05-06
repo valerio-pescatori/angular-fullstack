@@ -5,30 +5,140 @@
 
 .carousel-container {
   display: flex;
-  height: 400px;
-  background-color: aqua;
+  height: clamp(28%, 28%, 35em);
+  // height: 28%;
+  // max-height: 35em;
 }
 
-.carousel {
-  margin-left: 2em;
-  margin-top: 2em;
-  width: 50%;
-  background-color: red;
+.carousel-image {
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-side {
-  width: 50%;
-  background-color: black;
   margin: 0 1em;
   margin-top: 2em;
 }
 
+.carousel-icons {
+  margin-top: 0.6em;
+  color: white;
+}
+
+button {
+  // reset button
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.left,
+.right {
+  position: absolute;
+
+  background-color: white;
+  padding: 0.5em;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.right {
+  right: 0;
+}
+
+.carousel-text-wrapper {
+  color: white;
+  margin-top: 2em;
+  letter-spacing: -0.2px;
+}
+
+.carousel-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.carousel-text {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Tiempos, Times New Roman, serif;
+}
+
+.carousel-buttons {
+  h6 {
+    font-size: 18px;
+    color: white;
+    font-family: HelveticaNow, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+}
+
+.c-button {
+  background-color: white;
+  padding: 0.8em 0;
+  margin: 0 0.5em;
+  font-weight: 700;
+  &:hover {
+    background-color: #66676e;
+  }
+}
+
+.play-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  right: 1em;
+  bottom: 1em;
+  color: gray;
+  mix-blend-mode: hard-light;
+}
+
+.pagination {
+  background-color: white;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    height: 0.25em;
+  }
+}
+
+.active {
+  background-color: black;
+}
+
+@media (min-width: map.get($grid-breakpoints, "md")) {
+  .carousel-wrapper {
+    width: 50%;
+  }
+
+  .carousel-text,
+  .carousel-title {
+    font-size: 20px;
+  }
+
+  .carousel-buttons {
+    h6 {
+      font-size: 14px;
+    }
+  }
+}
+
 @media (min-width: map.get($grid-breakpoints, "lg")) {
-  .carousel {
+  .carousel-wrapper {
     width: 60%;
   }
 
-  .carousel-side {
-    width: 40%;
+  .carousel-text,
+  .carousel-title {
+    font-size: 28px;
   }
 }

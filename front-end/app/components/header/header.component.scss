@@ -2,7 +2,7 @@
 @use "sass:map";
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
-@import "../../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../../node_modules/bootstrap/scss/mixins";
 
 li {
   padding: 0.4em;
@@ -36,7 +36,7 @@ li {
   display: flex;
   align-items: center;
   background-color: white;
-  border: 1.5px solid #e4e4e4;
+  border: 1.5px solid var(--borderGrey);
   height: 3em;
 }
 
@@ -62,7 +62,7 @@ li {
 }
 
 .menu-icon-wrapper {
-  border: 1.5px solid #e4e4e4;
+  border: 1.5px solid var(--borderGrey);
   border-right: 0;
   height: 3em;
 }
@@ -86,6 +86,25 @@ li {
         padding: 0.8em;
         margin: 0 0.3em;
       }
+    }
+  }
+
+  .bottom-row {
+    height: 2em;
+  }
+
+  .search-form {
+    background-color: var(--lightGrey);
+    border: none;
+    height: 2em;
+  }
+
+  .search-input {
+    background-color: var(--lightGrey);
+    height: 2em;
+
+    &::placeholder {
+      color: var(--darkGrey);
     }
   }
 }

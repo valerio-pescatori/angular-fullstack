@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+
+:root {
+  --darkGrey: #a5a6aa;
+  --lightGrey: #efeff0;
+  --borderGrey: #d0d1d3;
+}
+
 body {
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;

@@ -1,39 +1,48 @@
-<div class="top-row d-flex justify-content-between align-items-center">
-  <ul class="d-none d-lg-block">
-    <li>Donna</li>
-    <li>Uomo</li>
-    <li>Bambini</li>
-  </ul>
-  <img src="../../../assets/Zalando_logo.png" class="logo" />
-  <ul class="icon-wrapper d-flex align-items-stretch">
-    <li class="mx-3"><i class="fal fa-user fa-lg"></i></li>
-    <li class="mx-3"><i class="fal fa-heart fa-lg"></i></li>
-    <li class="mx-3"><i class="fal fa-bag-shopping fa-lg"></i></li>
-  </ul>
-</div>
-<div class="bottom-row row g-0 justify-content-between">
-  <ul class="col-lg-5 d-none d-lg-flex row justify-content-start">
-    <li class="col"><span class="bottom-element">Novità</span></li>
-    <li class="col">
-      <span class="bottom-element">Abbigliamento</span>
-    </li>
-    <li class="col"><span class="bottom-element">Scarpe</span></li>
-    <li class="col"><span class="bottom-element">Sports</span></li>
-    <li class="col-4"></li>
-  </ul>
+<!-- top row -->
+<div class="container-xxl">
+  <div class="top-row d-flex justify-content-between align-items-center">
+    <ul class="d-none d-lg-block my-0">
+      <li>Donna</li>
+      <li>Uomo</li>
+      <li>Bambini</li>
+    </ul>
+    <img src="../../../assets/Zalando_logo.png" class="logo" />
+    <ul class="icon-wrapper d-flex mx-0 px-0 align-items-stretch">
+      <li class="mx-3 mx-lg-0"><i class="fal fa-user fa-lg"></i></li>
+      <li class="mx-3 mx-lg-0"><i class="fal fa-heart fa-lg"></i></li>
+      <li class="mx-3 mx-lg-0"><i class="fal fa-bag-shopping fa-lg"></i></li>
+    </ul>
+  </div>
 
-  <span
-    class="menu-icon-wrapper d-lg-none d-flex col-1 justify-content-center align-items-center"
-  >
-    <img class="menu-icon" src="../../../assets/menu-icon.svg" />
-  </span>
+  <!-- bottom row -->
+  <div class="bottom-row d-flex g-0 justify-content-between">
+    <ul class="col-lg-5 d-none d-lg-flex justify-content-start">
+      <li><span class="bottom-element">Novità</span></li>
+      <li>
+        <span class="bottom-element">Abbigliamento</span>
+      </li>
+      <li><span class="bottom-element">Scarpe</span></li>
+      <li><span class="bottom-element">Sports</span></li>
+    </ul>
 
-  <div class="col-lg-4 col-11">
-    <form class="search-form d-flex justify-content-between">
-      <span class="search-icon order-lg-1 order-2">
-        <i class="gg-search"></i>
-      </span>
-      <input class="search-input" type="search" placeholder="Ricerca" />
-    </form>
+    <!-- 3 lines -->
+    <span
+      class="menu-icon-wrapper d-lg-none d-flex col flex-shrink-1 justify-content-center align-items-center"
+    >
+      <i class="fal fa-bars fa-xl"></i>
+    </span>
+
+    <!-- form -->
+    <div class="col-lg-4 col-11">
+      <form
+        class="search-form d-flex justify-content-between justify-content-lg-start"
+      >
+        <span class="search-icon order-lg-first order-last">
+          <i class="fal fa-magnifying-glass fa-xl d-lg-none"></i>
+          <i class="fal fa-magnifying-glass fa-lg d-none d-lg-inline"></i>
+        </span>
+        <input class="search-input" type="search" placeholder="Ricerca" />
+      </form>
+    </div>
   </div>
 </div>
