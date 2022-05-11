@@ -5,9 +5,6 @@
 
 .carousel-container {
   display: flex;
-  height: clamp(28%, 28%, 35em);
-  // height: 28%;
-  // max-height: 35em;
 }
 
 .carousel-image {
@@ -63,6 +60,7 @@ button {
   font-weight: 400;
   font-size: 24px;
   font-family: Tiempos, Times New Roman, serif;
+  line-height: 32px;
 }
 
 .carousel-buttons {
@@ -117,7 +115,7 @@ button {
 
 @media (min-width: map.get($grid-breakpoints, "md")) {
   .carousel-wrapper {
-    width: 50%;
+    max-width: 50%;
   }
 
   .carousel-text,
@@ -133,10 +131,6 @@ button {
 }
 
 @media (min-width: map.get($grid-breakpoints, "lg")) {
-  .carousel-wrapper {
-    width: 60%;
-  }
-
   .carousel-text,
   .carousel-title {
     font-size: 28px;

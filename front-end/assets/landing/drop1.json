@@ -1,0 +1,147 @@
+{
+  "data": [
+    [
+      {
+        "text": "Donna",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "... tutto l'abbigliamento",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "T-Shirt & Top",
+        "icon": "fal fa-shirt",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Vestiti",
+        "icon": "fal fa-person-dress-simple",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Pantaloni",
+        "icon": "fal fa-person",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Felpe",
+        "icon": "fal fa-shirt-long-sleeve",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Jeans",
+        "icon": "fal fa-person",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Gonne",
+        "icon": "fal fa-person-dress",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Giacche",
+        "icon": "fal fa-shirt-long-sleeve",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Abbigliamento sportivo",
+        "icon": "fal fa-shirt-running",
+        "href": "#",
+        "type": "ICON"
+      }
+    ],
+    [
+      {
+        "text": "Uomo",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "... tutto l'abbigliamento",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Giacche",
+        "icon": "fal fa-shirt-long-sleeve",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Cappotti",
+        "icon": "fal fa-shirt-long-sleeve",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Maglieria & Felpe",
+        "icon": "fal fa-shirt",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Camicie",
+        "icon": "fal fa-shirt",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "T-shirt & Polo",
+        "icon": "fal fa-shirt",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Jeans",
+        "icon": "fal fa-person",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Pantaloni",
+        "icon": "fal fa-person",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Completi & Cravatte",
+        "icon": "fal fa-shirt-long-sleeve",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Abbigliamento Sportivo",
+        "icon": "fal fa-person-running",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Intimo",
+        "icon": "fal fa-person",
+        "href": "#",
+        "type": "ICON"
+      }
+    ],
+    [
+      {
+        "text": "Unisex Fashion",
+        "type": "HEADER"
+      },
+      {
+        "text": "Moda senza genere",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ]
+  ]
+}

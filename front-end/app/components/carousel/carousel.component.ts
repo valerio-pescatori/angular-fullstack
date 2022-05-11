@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { CarouselService } from './carousel.service';
-import { Image } from './utils';
-import { debounce } from 'front-end/app/decorators';
+import { Image } from '../../utils';
+import { HttpService } from '../../http.service';
 
 @Component({
   selector: 'app-carousel',
@@ -9,10 +8,12 @@ import { debounce } from 'front-end/app/decorators';
   styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent implements OnInit {
-  constructor(private carouselService: CarouselService) {}
-  breakpoint: string;
+  constructor(private imageService: HttpService<Image>) {}
+  /** Array of images to be displayed inside the carousel */
   images: Image[];
+  /** Index of currently displayed image */
   shown: number = 0;
+  /** Each image has its own bg color */
   colors: string[] = [
     '#8B56EE',
     '#5068EF',
@@ -22,33 +23,30 @@ export class CarouselComponent implements OnInit {
     '#4C8419',
     '#8B56EE',
   ];
+  /** Interval object that increments {@link shown} index */
   interval: NodeJS.Timeout | null;
+  /** boolean that toggles to true when api response is received  */
   loaded = false;
 
-  private getBreakpoint(bp: number) {
-    if (bp < 576) return 'xsm';
-    if (bp < 768) return 'sm';
-    if (bp < 992) return 'md';
-    if (bp < 1200) return 'lg';
-    if (bp < 1400) return 'xl';
-    return 'xxl';
-  }
-
+  /** Calls api to get images, creates the interval and set {@link loaded} to true*/
   ngOnInit(): void {
-    this.breakpoint = this.getBreakpoint(window.innerWidth);
-    this.carouselService.getImages().subscribe((data: Image[]) => {
+    this.imageService.get('api/landingImages').subscribe((data: Image[]) => {
       this.images = data;
       this.createInterval();
       this.loaded = true;
     });
   }
 
-  onClick(inc: boolean): void {
+  /** Handles the click event on the left and right arrow of the carousel
+   * @param {boolean} inc if true increments {@link shown}, else it decrements it.
+   */
+  arrowClick(inc: boolean): void {
     this.destroyInterval();
     if (inc && this.shown < this.images.length - 1) this.shown++;
     else if (!inc && this.shown > 0) this.shown--;
   }
 
+  /** Creates the interval and assigns it to the {@link interval} variable. */
   createInterval(): void {
     this.interval = setInterval(() => {
       if (this.shown === this.images.length - 1) this.shown = 0;
@@ -56,20 +54,15 @@ export class CarouselComponent implements OnInit {
     }, 3000);
   }
 
+  /** Destroys the {@link interval} interval by clearing and setting it to null. */
   destroyInterval(): void {
     if (this.interval != null) clearInterval(this.interval);
     this.interval = null;
   }
 
+  /** Toggle the {@link interval} interval: if it's null it calls {@link createInterval()} else it calls {@link destroyInterval()}.*/
   toggleInterval(): void {
     if (this.interval) this.destroyInterval();
     else this.createInterval();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  @debounce()
-  onResize(event: Event) {
-    const target = event.target as Window;
-    this.breakpoint = this.getBreakpoint(target.innerWidth);
   }
 }

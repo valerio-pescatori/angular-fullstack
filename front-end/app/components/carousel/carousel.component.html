@@ -7,16 +7,19 @@
     <div
       class="carousel-wrapper ms-4 mt-4 d-flex align-items-center position-relative"
     >
-      <button class="left" (click)="onClick(false)" *ngIf="shown != 0">
+      <!-- Left button  -->
+      <button class="left" (click)="arrowClick(false)" *ngIf="shown != 0">
         <i class="fat fa-arrow-left fa-2xl"></i>
       </button>
+      <!-- Right button -->
       <button
         class="right"
-        (click)="onClick(true)"
+        (click)="arrowClick(true)"
         *ngIf="shown != images.length - 1"
       >
         <i class="fat fa-arrow-right fa-2xl"></i>
       </button>
+      <!-- Play/Pause button -->
       <button class="play-button" (click)="toggleInterval()">
         <i
           class="fas fa-play fa-xs"
@@ -26,27 +29,12 @@
           <i class="fas fa-pause fa-xs"></i>
         </ng-template>
       </button>
+      <!-- Left side -->
       <div class="image-wrapper d-flex flex-column">
-        <ng-container [ngSwitch]="breakpoint">
-          <img
-            class="carousel-image"
-            [src]="'../../../' + images[shown].pathSm"
-            *ngSwitchCase="
-              breakpoint === 'md' || breakpoint === 'sm' || breakpoint === 'xsm'
-                ? breakpoint
-                : ''
-            "
-          />
-          <img
-            class="carousel-image"
-            [src]="'../../../' + images[shown].path"
-            *ngSwitchCase="
-              breakpoint === 'lg' || breakpoint === 'xl' || breakpoint === 'xxl'
-                ? breakpoint
-                : ''
-            "
-          />
-        </ng-container>
+        <picture>
+          <source [srcset]="images[shown].path" media="(min-width: 992px)" />
+          <img class="carousel-image" [src]="images[shown].pathSm" />
+        </picture>
         <div class="pagination">
           <ul class="row w-100">
             <li
@@ -58,6 +46,7 @@
         </div>
       </div>
     </div>
+    <!-- Right side -->
     <div class="carousel-side d-flex flex-column flex-fill">
       <div class="carousel-icons">
         <i

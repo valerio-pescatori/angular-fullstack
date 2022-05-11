@@ -1,0 +1,109 @@
+{
+  "data": [
+    [
+      {
+        "text": "Donna",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "Ultimi Arrivi",
+        "type": "HEADER"
+      },
+      {
+        "text": "Abbigliamento",
+        "icon": "fal fa-bags-shopping",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Borse & Accessori",
+        "icon": "fal fa-bag-shopping",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Sports",
+        "icon": "fal fa-dumbbell",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "#shoplocal",
+        "icon": "fal fa-seal",
+        "href": "#",
+        "type": "ICON"
+      }
+    ],
+    [
+      {
+        "text": "Uomo",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "Ultimi Arrivi",
+        "type": "HEADER"
+      },
+      {
+        "text": "Abbigliamento",
+        "icon": "fal fa-bags-shopping",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Borse & Accessori",
+        "icon": "fal fa-bag-shopping",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Sports",
+        "icon": "fal fa-dumbbell",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "#shoplocal",
+        "icon": "fal fa-seal",
+        "href": "#",
+        "type": "ICON"
+      }
+    ],
+    [
+      {
+        "text": "Unisex Fashion",
+        "type": "HEADER"
+      },
+      {
+        "text": "Moda senza genere",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ]
+  ]
+}

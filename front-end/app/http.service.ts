@@ -2,14 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import { Image } from './utils';
 
 @Injectable({ providedIn: 'root' })
-export class CarouselService {
-  getImages(): Observable<Image[]> {
-    return this.http
-      .get<Image[]>('api/landingImages')
-      .pipe(catchError(this.handleError));
+export class HttpService<T> {
+  get(url: string): Observable<T[]> {
+    return this.http.get<T[]>(url).pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {

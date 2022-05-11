@@ -1,4 +1,4 @@
-<!-- top row -->
+<!-- Top row -->
 <div class="container-xxl">
   <div class="top-row d-flex justify-content-between align-items-center">
     <ul class="d-none d-lg-block my-0">
@@ -14,15 +14,22 @@
     </ul>
   </div>
 
-  <!-- bottom row -->
+  <!-- Bottom row -->
   <div class="bottom-row d-flex g-0 justify-content-between">
-    <ul class="col-lg-5 d-none d-lg-flex justify-content-start">
-      <li><span class="bottom-element">Novità</span></li>
-      <li>
-        <span class="bottom-element">Abbigliamento</span>
+    <ul
+      class="col-lg-5 d-none d-lg-flex justify-content-start mb-0"
+      (mouseleave)="dropdownSetActive(false)"
+    >
+      <li
+        *ngFor="let el of navElements; index as i"
+        (mouseenter)="dropdownSetActive(true, i)"
+      >
+        <span class="bottom-element">{{ el }}</span>
       </li>
-      <li><span class="bottom-element">Scarpe</span></li>
-      <li><span class="bottom-element">Sports</span></li>
+      <app-dropdown
+        [url]="dropdownUrl"
+        [(active)]="dropdownIsActive"
+      ></app-dropdown>
     </ul>
 
     <!-- 3 lines -->
@@ -32,7 +39,7 @@
       <i class="fal fa-bars fa-xl"></i>
     </span>
 
-    <!-- form -->
+    <!-- Search form -->
     <div class="col-lg-4 col-11">
       <form
         class="search-form d-flex justify-content-between justify-content-lg-start"

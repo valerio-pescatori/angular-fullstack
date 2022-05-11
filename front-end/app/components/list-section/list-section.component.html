@@ -1,1 +1,10 @@
-<p>list-section works!</p>
+<div class="container-xxl">
+  <div class="mx-4">
+    <h3 class="category-title my-5">{{ title }}</h3>
+    <div class="row row-cols-2 row-cols-md-4">
+      <div class="col category-element" *ngFor="let item of items">
+        <span class="ms-1">{{ item.name }}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+@use "../../mixins.scss" as myMixins;
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2em;
+  background: white;
+  height: 30em;
+  z-index: 999;
+  border-top: var(--borderGrey) 1px solid;
+  border-bottom: black 2px solid;
+}
+
+.linked-header-element,
+.header-element {
+  font-family: Tiempos, "Times New Roman", sans-serif;
+  font-weight: 400;
+  color: grey;
+}
+
+.text-element {
+  font-family: Helvetica, sans-serif;
+}
+
+.underline {
+  position: relative;
+  @include myMixins.underline-on-hover;
+}

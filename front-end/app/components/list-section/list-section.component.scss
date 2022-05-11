@@ -1,0 +1,25 @@
+@use "../../mixins.scss" as myMixins;
+@use "sass:map";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+
+.category-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.category-element {
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+  font-size: 14px;
+  span {
+    @include myMixins.underline-on-hover;
+    position: relative;
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, "lg")) {
+  .category-title {
+    font-size: 28px;
+  }
+}

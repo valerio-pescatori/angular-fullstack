@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ListSectionComponent } from './components/list-section/list-section.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { DropdownCastPipe } from './dropdown-cast.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, CarouselComponent, ListSectionComponent],
+  declarations: [AppComponent, HeaderComponent, CarouselComponent, ListSectionComponent, DropdownComponent, DropdownCastPipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

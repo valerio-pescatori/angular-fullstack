@@ -1,0 +1,52 @@
+<div class="dropdown" *ngIf="active" (mouseleave)="setActive(false)">
+  <div class="d-flex pt-4 container-xxl">
+    <!-- Flex-column div -->
+    <div class="d-flex flex-column mt-5 mx-5" *ngFor="let col of elements">
+      <div *ngFor="let el of col">
+        <!-- Switch based on element type -->
+        <ng-container [ngSwitch]="el.type">
+          <!-- LINKED_HEADER -->
+          <div
+            class="linked-header-element my-1"
+            *ngSwitchCase="'LINKED_HEADER'"
+          >
+            <a [href]="(el | as: linkedHeader).href"
+              ><h5>
+                {{ el.text }}
+              </h5></a
+            >
+          </div>
+
+          <!-- HEADER -->
+          <div class="header-element my-1" *ngSwitchCase="'HEADER'">
+            <h5>{{ el.text }}</h5>
+          </div>
+
+          <!-- ICON -->
+          <div class="my-1 row" *ngSwitchCase="'ICON'">
+            <i
+              [ngClass]="
+                (el | as: icon).icon +
+                ' fa-lg col-1 me-2 d-flex justify-content-center align-items-center'
+              "
+            ></i>
+            <span class="col">
+              <a [href]="(el | as: icon).href" class="underline">{{
+                el.text
+              }}</a></span
+            >
+          </div>
+
+          <!-- TEXT -->
+          <div class="text-element" *ngSwitchCase="'TEXT'">
+            <span>
+              <a [href]="(el | as: text).href" class="underline">{{
+                el.text
+              }}</a>
+            </span>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

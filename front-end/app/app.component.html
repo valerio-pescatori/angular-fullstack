@@ -1,4 +1,12 @@
 <div class="container-fluid g-0">
   <app-header class="header"></app-header>
   <app-carousel style="margin-top: 2em"></app-carousel>
+  <app-list-section
+    [url]="'api/getAllBrands'"
+    [title]="'I nostri top brand: abbigliamento, scarpe e accessori'"
+  ></app-list-section>
+  <app-list-section
+    [url]="'api/getAllcategories'"
+    [title]="'Le nostre top cateogire più alla moda'"
+  ></app-list-section>
 </div>
