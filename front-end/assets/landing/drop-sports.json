@@ -1,0 +1,191 @@
+{
+  "data": [
+    [
+      {
+        "text": "Donna",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "... tutti gli sport",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Running",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Fitness",
+        "icon": "fal fa-watch-fitness",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Outdoor",
+        "icon": "fal fa-cloud-sun",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Nuoto/Surf",
+        "icon": "fal fa-water-ladder",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Tennis",
+        "icon": "fal fa-tennis-ball",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Abbigliamento sportivo",
+        "icon": "fal fa-game-board",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe sportive",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Attrezzature sportive",
+        "icon": "fal fa-stopwatch-20",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "...tutto sport donna",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Uomo",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "... tutti gli sport",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Running",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Fitness",
+        "icon": "fal fa-dumbbell",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Basketball",
+        "icon": "fal fa-basketball",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Nuoto",
+        "icon": "fal fa-water-ladder",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Calcio",
+        "icon": "fal fa-futbol",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Abbigliamento sportivo",
+        "icon": "fal fa-game-board",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe sportive",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Attrezzature sportive",
+        "icon": "fal fa-stopwatch-20",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "...tutto sport uomo",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Bambini",
+        "type": "HEADER"
+      },
+      {
+        "text": "Bimba",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Bimbo",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Brand",
+        "type": "HEADER"
+      },
+      {
+        "text": "... tutti i brand",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Nike",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "adidas",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "ASICS",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Patagonia",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "The north face",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Jordan",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ]
+  ]
+}

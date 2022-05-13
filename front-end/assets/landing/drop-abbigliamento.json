@@ -3,8 +3,7 @@
     [
       {
         "text": "Donna",
-        "href": "#",
-        "type": "LINKED_HEADER"
+        "type": "HEADER"
       },
       {
         "text": "... tutto l'abbigliamento",
@@ -63,8 +62,7 @@
     [
       {
         "text": "Uomo",
-        "href": "#",
-        "type": "LINKED_HEADER"
+        "type": "HEADER"
       },
       {
         "text": "... tutto l'abbigliamento",
@@ -134,13 +132,57 @@
     ],
     [
       {
-        "text": "Unisex Fashion",
+        "text": "Bambini",
         "type": "HEADER"
       },
       {
-        "text": "Moda senza genere",
+        "text": "Bimba",
         "href": "#",
         "type": "TEXT"
+      },
+      {
+        "text": "Bimbo",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Altre categorie",
+        "type": "HEADER"
+      },
+      {
+        "text": "Moda Premaman",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Moda inclusiva",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Unisex Fashion",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Nuovi Arrivi",
+        "type": "HEADER"
+      },
+      {
+        "text": "Nuovi arrivi donna",
+        "icon": "fal fa-seal",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Nuovi arrivi uomo",
+        "icon": "fal fa-seal",
+        "href": "#",
+        "type": "ICON"
       }
     ]
   ]

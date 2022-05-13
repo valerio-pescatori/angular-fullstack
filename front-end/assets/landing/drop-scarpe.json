@@ -1,0 +1,205 @@
+{
+  "data": [
+    [
+      {
+        "text": "Donna",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "... tutte le scarpe",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Stivaletti",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Stivali",
+        "icon": "fal fa-boot-heeled",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Sneakers",
+        "icon": "fal fa-shoe-prints",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe con tacco",
+        "icon": "fal fa-ice-skate",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Decolleté",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe basse",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Stringate",
+        "icon": "fal fa-boot-heeled",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Ballerine",
+        "icon": "fal fa-shoe-prints",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe sportive",
+        "icon": "fal fa-ice-skate",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Sandali",
+        "icon": "fal fa-ice-skate",
+        "href": "#",
+        "type": "ICON"
+      }
+    ],
+    [
+      {
+        "text": "Uomo",
+        "href": "#",
+        "type": "LINKED_HEADER"
+      },
+      {
+        "text": "... tutte le scarpe",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Sneakers",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe sportive",
+        "icon": "fal fa-boot-heeled",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Stringate",
+        "icon": "fal fa-shoe-prints",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Stivali & Anfibi",
+        "icon": "fal fa-ice-skate",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe eleganti",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe basse",
+        "icon": "fal fa-boot",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe da calcio",
+        "icon": "fal fa-boot-heeled",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe outdoor",
+        "icon": "fal fa-shoe-prints",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Scarpe aperte",
+        "icon": "fal fa-ice-skate",
+        "href": "#",
+        "type": "ICON"
+      },
+      {
+        "text": "Mocassini",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Bimba",
+        "type": "HEADER"
+      },
+      {
+        "text": "Ragazza (9 - 16 anni)",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Bambina (2 - 9 anni)",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Neonata (0 - 2 anni)",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Bimbo",
+        "type": "HEADER"
+      },
+      {
+        "text": "Ragazzo (9 - 16 anni)",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Bambino (2 - 9 anni)",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Neonato (0 - 2 anni)",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ],
+    [
+      {
+        "text": "Nuovi arrivi",
+        "type": "HEADER"
+      },
+      {
+        "text": "Nuovi arrivi donna",
+        "href": "#",
+        "type": "TEXT"
+      },
+      {
+        "text": "Nuovi arrivi uomo",
+        "href": "#",
+        "type": "TEXT"
+      }
+    ]
+  ]
+}
