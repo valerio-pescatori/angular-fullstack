@@ -22,7 +22,9 @@
     >
       <li
         *ngFor="let el of navElements; index as i"
-        (mouseenter)="dropdownSetActive(true, i)"
+        (mouseenter)="dropdownSetActive(true, el)"
+        (focus)="dropdownSetActive(true, el)"
+        tabindex="0"
       >
         <span class="bottom-element">{{ el }}</span>
       </li>

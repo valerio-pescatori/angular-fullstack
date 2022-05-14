@@ -37,3 +37,15 @@ export interface DropdownIcon extends DropdownElement {
   icon: string;
   href: string;
 }
+
+export interface Picture {
+  src: string;
+  text: string;
+  href: string;
+  bgColor: string;
+}
+
+export interface Dropdown {
+  array: DropdownElement[][];
+  picture: Picture;
+}

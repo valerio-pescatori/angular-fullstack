@@ -23,7 +23,7 @@ export class ListSectionComponent implements OnInit {
    */
   ngOnInit(): void {
     this.categoryService
-      .get(this.url)
+      .getAll(this.url)
       .subscribe((data: Category[] | Brand[]) => {
         this.items = data.sort((a, b) =>
           a.name.toLowerCase() < b.name.toLowerCase()

@@ -30,7 +30,7 @@ export class CarouselComponent implements OnInit {
 
   /** Calls api to get images, creates the interval and set {@link loaded} to true*/
   ngOnInit(): void {
-    this.imageService.get('api/landingImages').subscribe((data: Image[]) => {
+    this.imageService.getAll('api/landingImages').subscribe((data: Image[]) => {
       this.images = data;
       this.createInterval();
       this.loaded = true;

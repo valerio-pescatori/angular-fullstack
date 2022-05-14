@@ -1,4 +1,8 @@
 @use "../../mixins.scss" as myMixins;
+@use "sass:map";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
 
 .dropdown {
   position: absolute;
@@ -25,5 +29,31 @@
 
 .underline {
   position: relative;
+  font-size: 14px;
   @include myMixins.underline-on-hover;
+}
+
+.picture-wrapper {
+  height: 80%;
+}
+
+.picture {
+  width: 95%;
+  height: 85%;
+}
+
+.picture-text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.img {
+  object-fit: cover;
+  object-position: top left;
+}
+
+@media (min-width: map.get($grid-breakpoints, "xl")) {
+  .picture-wrapper {
+    height: 95%;
+  }
 }

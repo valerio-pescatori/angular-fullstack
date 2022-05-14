@@ -16,15 +16,16 @@ export class HeaderComponent implements OnInit {
   navElements: string[] = ['Novità', 'Abbigliamento', 'Scarpe', 'Sports'];
 
   ngOnInit(): void {
-    this.dropdownUrl = 'api/getDropdown/0';
+    this.dropdownUrl = 'api/getDropdown/novità';
   }
 
   /** Activate/Deactivate dropdown and optionally updates {@link dropdownUrl}.
    * @param {boolean} state if true renders the dropdown.
    * @param {number} tab index of the hovered element
    */
-  dropdownSetActive(state: boolean, tab?: number) {
+  dropdownSetActive(state: boolean, tab?: string) {
     this.dropdownIsActive = state;
-    if (tab != undefined) this.dropdownUrl = 'api/getDropdown/' + tab;
+    if (tab != undefined)
+      this.dropdownUrl = 'api/getDropdown/' + tab.toLowerCase();
   }
 }

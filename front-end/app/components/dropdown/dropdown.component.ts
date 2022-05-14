@@ -13,6 +13,8 @@ import {
   DropdownHeader,
   DropdownIcon,
   DropdownText,
+  Dropdown,
+  Picture,
 } from '../../utils';
 
 @Component({
@@ -29,6 +31,8 @@ export class DropdownComponent implements OnInit {
   @Output() activeChange: EventEmitter<boolean> = new EventEmitter<boolean>();
   /** 2D array of DropdownElement */
   elements: DropdownElement[][] = [];
+  /** Picture object that contains information about dropdown image link and text */
+  picture: Picture;
 
   /** Dummy variable used for type casting */
   linkedHeader: DropdownLinkedHeader;
@@ -40,12 +44,12 @@ export class DropdownComponent implements OnInit {
   text: DropdownText;
 
   /** constructor with HttpService injection */
-  constructor(private dropdownService: HttpService<DropdownElement[]>) {}
+  constructor(private dropdownService: HttpService<Dropdown>) {}
 
   ngOnInit(): void {}
 
   /** Lifecycle hook that is called when data-bound propery changes,
-   * in this case we only care about changes of the {@linkcdoe url} variable
+   * in this case we only care about changes of the {@linkcode url} variable
    * @param {SimpleChanges} changes objects that contains both old and new value for each updated property */
   ngOnChanges(changes: SimpleChanges) {
     if (changes.url) this.getDropdownElements();
@@ -53,11 +57,10 @@ export class DropdownComponent implements OnInit {
 
   /** Calls the api to get content for the dropdown */
   getDropdownElements(): void {
-    this.dropdownService
-      .get(this.url)
-      .subscribe((data: DropdownElement[][]) => {
-        this.elements = data;
-      });
+    this.dropdownService.getObj(this.url).subscribe((data: Dropdown) => {
+      this.elements = data.array;
+      this.picture = data.picture;
+    });
   }
 
   /** Sets parent {@linkcode active} variable to {@linkcode state}.

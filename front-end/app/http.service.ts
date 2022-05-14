@@ -5,8 +5,12 @@ import { catchError, retry } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class HttpService<T> {
-  get(url: string): Observable<T[]> {
+  getAll(url: string): Observable<T[]> {
     return this.http.get<T[]>(url).pipe(catchError(this.handleError));
+  }
+
+  getObj(url: string): Observable<T> {
+    return this.http.get<T>(url).pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse) {

@@ -1,5 +1,5 @@
 {
-  "data": [
+  "array": [
     [
       {
         "text": "Donna",
@@ -185,5 +185,11 @@
         "type": "ICON"
       }
     ]
-  ]
+  ],
+  "picture": {
+    "src": "assets/landing/dropdown/abbigliamento.webp",
+    "text": "Abbigliamento",
+    "href": "#",
+    "bgColor": "#efeff0"
+  }
 }

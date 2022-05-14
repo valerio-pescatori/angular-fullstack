@@ -1,5 +1,5 @@
 {
-  "data": [
+  "array": [
     [
       {
         "text": "Donna",
@@ -187,5 +187,11 @@
         "type": "TEXT"
       }
     ]
-  ]
+  ],
+  "picture": {
+    "src": "assets/landing/dropdown/sports.webp",
+    "text": "Sports",
+    "href": "#",
+    "bgColor": "#efeff0"
+  }
 }
